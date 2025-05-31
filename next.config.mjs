@@ -1,14 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  images: {
-    unoptimized: true,
-  },
-}
+  // 1) Produce a fully static export
+  output: 'export',
 
-export default nextConfig
+  // 2) Serve every page under `/portfolio`
+  basePath: '/portfolio',
+
+  // 3) Prefix all asset URLs with `/portfolio/`
+  assetPrefix: '/portfolio/'
+};
+
+export default nextConfig;
+
