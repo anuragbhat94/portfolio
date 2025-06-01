@@ -34,7 +34,7 @@ export default function Portfolio() {
     {
       category: "Energy Policy",
       title: "New Jersey Energy Master Plan Analysis",
-      thumbnail: "/portfolio/thumbnails/nj.png",
+      thumbnail: "/thumbnails/nj.png",
       description:
         "Economic modeling of renewable energy strategies and LCOE analysis for policy recommendations",
       affiliation: "Independent research using datasets from NREL, EIA, and DOE",
@@ -44,7 +44,7 @@ export default function Portfolio() {
     {
       category: "Climate Action",
       title: "Bloomington HeatWatch Initiative",
-      thumbnail: "/portfolio/thumbnails/heat.png",
+      thumbnail: "/thumbnails/heat.png",
       description:
         "Urban heat island mapping and vulnerability assessment for climate resilience",
       affiliation:
@@ -55,7 +55,7 @@ export default function Portfolio() {
     {
       category: "Community Research",
       title: "Bloomington Community Heat Survey",
-      thumbnail: "/portfolio/thumbnails/survey.png",
+      thumbnail: "/thumbnails/survey.png",
       description:
         "Citywide heat vulnerability survey and analysis across 64 neighborhoods",
       affiliation:
@@ -66,7 +66,7 @@ export default function Portfolio() {
     {
       category: "International Policy",
       title: "Central Asia Hydrological Hazards",
-      thumbnail: "/portfolio/thumbnails/hydro.png",
+      thumbnail: "/thumbnails/hydro.png",
       description:
         "Policy analysis for U.S. Department of State on Early Warning Systems and disaster resilience",
       affiliation:
@@ -77,7 +77,7 @@ export default function Portfolio() {
     {
       category: "Climate Planning",
       title: "South Bend Climate Action Plan",
-      thumbnail: "/portfolio/thumbnails/sbcap.png",
+      thumbnail: "/thumbnails/sbcap.png",
       description:
         "Social vulnerability assessment and GIS mapping to support equity-centered policy",
       affiliation:
@@ -88,7 +88,7 @@ export default function Portfolio() {
     {
       category: "Governance & Emissions",
       title: "Effective Governance and CO₂ Emissions",
-      thumbnail: "/portfolio/thumbnails/co2.png",
+      thumbnail: "/thumbnails/co2.png",
       description:
         "Graduate-level research linking governance indicators to CO₂ outcomes through regression modeling",
       affiliation:
@@ -100,7 +100,7 @@ export default function Portfolio() {
     {
       category: "Data & Market Insights",
       title: "Real Insight Residential Market Report",
-      thumbnail: "/portfolio/thumbnails/housing.png",
+      thumbnail: "/thumbnails/housing.png",
       description:
         "Quarterly industry report analyzing housing trends and buyer behavior in India",
       affiliation:
@@ -111,7 +111,7 @@ export default function Portfolio() {
     {
       category: "Women’s Economic Empowerment",
       title: "Pilot Review – UNDP Disha",
-      thumbnail: "/portfolio/thumbnails/undp.png",
+      thumbnail: "/thumbnails/undp.png",
       description:
         "Process evaluation of entrepreneurship mentorship model for rural women in Haryana",
       affiliation:
@@ -146,7 +146,7 @@ export default function Portfolio() {
         <section id="home" className="relative h-screen">
           {/* Background image */}
           <img
-            src="/portfolio/Gemini_Generated_Image_23fetk23fetk23fe.png"
+            src="/Gemini_Generated_Image_23fetk23fetk23fe.png"
             alt="Hero background"
             className="absolute inset-0 object-cover w-full h-full"
           />
@@ -211,7 +211,7 @@ export default function Portfolio() {
               {/* Photo */}
               <div className="order-1 lg:order-2 flex justify-center">
                 <img
-                  src="/portfolio/IMG_5100.jpg"
+                  src="/IMG_5100.jpg"
                   alt="Anurag Bhat professional photo"
                   className="max-w-xs w-full h-auto object-cover border-2 border-black"
                 />
