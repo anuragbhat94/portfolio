@@ -7,7 +7,9 @@ const nextConfig = {
   basePath: '/portfolio',
 
   // 3) Prefix all asset URLs with `/portfolio/`
-  assetPrefix: '/portfolio/'
+  assetPrefix: '/portfolio/',
+
+  images: { unoptimized: true }
 };
 
 export default nextConfig;
