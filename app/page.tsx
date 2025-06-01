@@ -179,7 +179,7 @@ export default function Portfolio() {
                 className="bg-transparent border border-white text-white hover:bg-white/10"
               >
                 <a
-                  href="https://drive.google.com/uc?export=download&id=1VnQ-5Xt9t8izW9bfWAACxZtuiNV9jYOm"
+                  href="https://drive.google.com/file/d/11uDN1wH3Zuj-aS-fZc4Gvmeg_oll-g0d/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -690,7 +690,7 @@ export default function Portfolio() {
               className="flex-1 hover:bg-gray-100 text-gray-800"
             >
               <a
-                href="https://drive.google.com/file/d/1VnQ-5Xt9t8izW9bfWAACxZtuiNV9jYOm/view?usp=sharing"
+                href="https://drive.google.com/file/d/11uDN1wH3Zuj-aS-fZc4Gvmeg_oll-g0d/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
