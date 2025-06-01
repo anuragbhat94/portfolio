@@ -2,7 +2,7 @@
   "name": "my-v0-project",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://anuragbhat94.github.io/1",
+  "homepage": "https://anuragbhat94.github.io/portfolio",
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
