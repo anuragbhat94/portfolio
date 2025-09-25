@@ -179,11 +179,8 @@ export default function Portfolio() {
                 className="bg-transparent border border-white text-white hover:bg-white/10"
               >
                 <a
-                  href="https://drive.google.com/file/d/11uDN1wH3Zuj-aS-fZc4Gvmeg_oll-g0d/view?usp=sharing"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Download CV
+                  href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+  Download CV
                 </a>
               </Button>
             </div>
@@ -690,12 +687,8 @@ export default function Portfolio() {
               className="flex-1 hover:bg-gray-100 text-gray-800"
             >
               <a
-                href="https://drive.google.com/file/d/11uDN1wH3Zuj-aS-fZc4Gvmeg_oll-g0d/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Download className="w-4 h-4 mr-2 inline-block" />
-                Download CV
+                href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+  Download CV
               </a>
             </Button>
           </div>
