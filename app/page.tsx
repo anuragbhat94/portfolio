@@ -27,6 +27,9 @@ import {
 import Image from "next/image";
 
 export default function Portfolio() {
+  const assetPath = (path: string) =>
+    process.env.NODE_ENV === "production" ? `/portfolio${path}` : path;
+
   // ─────────────────────────────────────────────────────────────────────────────
   // Projects data (with thumbnails)
   // ─────────────────────────────────────────────────────────────────────────────
@@ -206,7 +209,7 @@ export default function Portfolio() {
         <section id="home" className="relative h-screen">
           {/* Background image */}
           <img
-            src="/hero-sustainability.webp"
+            src={assetPath("/hero-sustainability.webp")}
             alt=""
             aria-hidden="true"
             className="absolute inset-0 object-cover w-full h-full"
@@ -249,7 +252,7 @@ export default function Portfolio() {
                 className="bg-transparent border border-white text-white hover:bg-white/10"
               >
                 <a
-                  href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                  href={assetPath("/resume.pdf")} target="_blank" rel="noopener noreferrer">
   Download Résumé
                 </a>
               </Button>
@@ -278,7 +281,7 @@ export default function Portfolio() {
               {/* Photo */}
               <div className="order-1 lg:order-2 flex justify-center">
                 <img
-                  src="/anurag-bhat-headshot.webp"
+                  src={assetPath("/anurag-bhat-headshot.webp")}
                   alt="Anurag Bhat professional photo"
                   className="max-w-xs w-full h-auto object-cover border-2 border-black"
                 />
@@ -429,7 +432,7 @@ export default function Portfolio() {
                   {/* Thumbnail */}
                   <div className="relative w-full h-32">
                     <img
-                      src={proj.thumbnail}
+                      src={assetPath(proj.thumbnail)}
                       alt={proj.thumbnailAlt ?? `${proj.title} thumbnail`}
                       className="w-full h-full object-cover"
                     />
@@ -792,7 +795,7 @@ export default function Portfolio() {
               className="flex-1 hover:bg-gray-100 text-gray-800"
             >
               <a
-                href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                href={assetPath("/resume.pdf")} target="_blank" rel="noopener noreferrer">
   Download CV
               </a>
             </Button>
