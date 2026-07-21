@@ -1,8 +1,11 @@
 "use client"; // Required if you have onClick handlers
 
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <header className="fixed top-0 left-0 w-full bg-gradient-to-r from-green-100 via-green-300 to-emerald-700 shadow-md z-50">
       <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
@@ -14,7 +17,7 @@ export default function Header() {
         </Link>
 
         {/* 2) Desktop navigation links */}
-        <nav className="hidden md:flex space-x-8">
+        <nav aria-label="Primary navigation" className="hidden md:flex space-x-8">
           <Link
             href="#about"
             className="text-gray-900 hover:text-amber-300 transition"
@@ -58,11 +61,11 @@ export default function Header() {
         <div className="md:hidden">
           <button
             type="button"
-            className="text-white hover:text-amber-300 focus:outline-none"
-            onClick={() => {
-              const menu = document.getElementById("mobile-nav");
-              menu?.classList.toggle("hidden");
-            }}
+            aria-label="Toggle navigation menu"
+            aria-controls="mobile-nav"
+            aria-expanded={isMenuOpen}
+            className="rounded p-1 text-gray-900 hover:bg-emerald-800 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2"
+            onClick={() => setIsMenuOpen((open) => !open)}
           >
             <svg
               className="w-6 h-6"
@@ -84,29 +87,36 @@ export default function Header() {
       {/* 5) Mobile dropdown nav (initially hidden) */}
       <nav
         id="mobile-nav"
-        className="md:hidden hidden bg-amber-700 border-t border-amber-600"
+        aria-label="Mobile navigation"
+        className={`border-t border-emerald-800 bg-emerald-900 md:hidden ${
+          isMenuOpen ? "block" : "hidden"
+        }`}
       >
         <Link
           href="#about"
-          className="block px-6 py-3 text-white hover:text-amber-300 hover:bg-amber-600 transition"
+          onClick={() => setIsMenuOpen(false)}
+          className="block px-6 py-3 text-white transition hover:bg-emerald-800"
         >
           About
         </Link>
         <Link
           href="#projects"
-          className="block px-6 py-3 text-white hover:text-amber-300 hover:bg-amber-600 transition"
+          onClick={() => setIsMenuOpen(false)}
+          className="block px-6 py-3 text-white transition hover:bg-emerald-800"
         >
           Projects
         </Link>
         <Link
           href="#experience"
-          className="block px-6 py-3 text-white hover:text-amber-300 hover:bg-amber-600 transition"
+          onClick={() => setIsMenuOpen(false)}
+          className="block px-6 py-3 text-white transition hover:bg-emerald-800"
         >
           Experience
         </Link>
         <Link
           href="#contact"
-          className="block px-6 py-3 text-white hover:text-amber-300 hover:bg-amber-600 transition"
+          onClick={() => setIsMenuOpen(false)}
+          className="block px-6 py-3 text-white transition hover:bg-emerald-800"
         >
           Contact
         </Link>
